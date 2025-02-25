@@ -67,7 +67,10 @@ body {
         margin-left: 2px;
     }
     .navegador-menu {
-        height: 45%;
+        height: 59%;
+    }
+    .navegador {
+        height: 13vh;
     }
 }
 
