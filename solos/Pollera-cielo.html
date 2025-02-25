@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magno</title>
+    <link rel="icon" href="../media/Logo-magno2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Nav -->
+    <header>
+        <nav class="navegador">
+            <img class="navegador-menu" src="../Media/Logo-menu.svg" alt="Menú despleglabe">
+            <a class="link-logo-nav" href="../index.html#menu">
+                <img class="navegador-logo" src="../Media/Logo-magno2.jpg" alt="Logo de la empresa Magno">
+            </a>
+            <div class="redes">
+                <a class="link-logo-wpp" href="https://wa.me/5491127390503" target="_blank">
+                    <img src="../Media/whatsapp.svg" alt="WhatsApp" class="navegador-whatsapp">
+                </a>
+                <a class="link-logo-ig" href="https://instagram.com/maggnostore" target="_blank">
+                    <img src="../Media/instagram-line.svg" alt="Instagram" class="navegador-instagram">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menu desplegable -->
+
+    <div class="menu-desplegable" id="menu">
+        <nav class="navegador">
+            <a class="link-logo-nav" href="../index.html#menu">
+                <img class="navegador-logo" src="../Media/Logo-magno2.jpg" alt="Logo de la empresa Magno">
+            </a>
+            <img class="close-icon" src="../Media/close.svg" alt="logo de cruz para cerrar el menu desplegable" id="close">
+        </nav>
+        <div class="menu-contenido">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="../index.html"><B>Inicio</B></a></li>
+                <li class="menu-item"><a href="../mujer.html">MUJER</a></li>
+                <li class="menu-item"><a href="../hombre.html">HOMBRE</a></li>
+            </ul>
+
+            <!-- Redes sociales al final del menú -->
+            <div class="menu-social">
+                <a href="https://wa.me/5491127390503" target="_blank">
+                    <img src="../Media/whatsapp.svg" alt="WhatsApp" class="social-icon">
+                </a>
+                <a href="https://instagram.com/maggnostore" target="_blank">
+                    <img src="../Media/instagram-line.svg" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!-- Contenedor del producto -->
+    <div class="product-container">
+        <!-- Imagen del producto -->
+        <div class="product-image">
+            <img src="../Media/Polleras-cielo-bordo,blanca2.jpg" alt="Producto Increíble">
+        </div>
+
+        <!-- Descripción del producto -->
+        <div class="product-details">
+            <h2>Pollera Cielo</h2>
+            <p>Pollera volados tela gruesa</p>
+            <h3 class="price">$18.000</h3>
+            <!-- <h3 class="price">Sin stock!!</h3> -->
+
+            <!-- Sección para mostrar colores disponibles -->
+            <div class="color-selector">
+                <h3>Colores disponibles:</h3>
+                <div class="color-list">
+                    <div class="color-circle" style="background-color: #fff; border: 1px solid #ccc;" title="Blanco"></div>
+                    <div class="color-circle" style="background-color: #6c0f1a;" title="Bordo"></div>
+                </div>
+            </div>
+
+            <a id="whatsapp-link" href="#" target="_blank" class="btn-whatsapp">
+                Comprar vía WhatsApp
+            </a>
+            <!-- <a id="no-stock" href="#" target="_blank" class="btn-whatsapp-gris">
+                Comprar vía WhatsApp
+            </a> -->
+        </div>
+        
+        <script>
+            // Detectar si es móvil o desktop
+            function isMobileDevice() {
+                return /Mobi/i.test(window.navigator.userAgent);
+            }
+        
+            // Obtener el elemento del enlace
+            var whatsappLink = document.getElementById('whatsapp-link');
+        
+            // Definir los enlaces para móvil y desktop
+            var mobileLink = "https://wa.me/5491127390503?text=Holaa,%20Estaba%20buscando%20comprar%20la%20Pollera%20Cielo.%20Precio:%20$18.000";
+            var desktopLink = "https://web.whatsapp.com/send?phone=5491127390503&text=Holaa,%20Estaba%20buscando%20comprar%20la%20Pollera%20Cielo.%20Precio:%20$18.000";
+        
+            // Asignar el enlace correspondiente según el dispositivo
+            if (isMobileDevice()) {
+                whatsappLink.href = mobileLink;
+            } else {
+                whatsappLink.href = desktopLink;
+            }
+        </script>
+    </div>
+
+    <script src="../vapes.js"></script>
+</body>
+</html>
