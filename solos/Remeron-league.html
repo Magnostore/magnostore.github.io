@@ -16,9 +16,6 @@
                 <img class="navegador-logo" src="../Media/Logo-magno2.jpg" alt="Logo de la empresa Magno">
             </a>
             <div class="redes">
-                <a class="link-logo-wpp" href="https://wa.me/5491127390503" target="_blank">
-                    <img src="../Media/whatsapp.svg" alt="WhatsApp" class="navegador-whatsapp">
-                </a>
                 <a class="link-logo-ig" href="https://instagram.com/maggnostore" target="_blank">
                     <img src="../Media/instagram-line.svg" alt="Instagram" class="navegador-instagram">
                 </a>
@@ -44,9 +41,6 @@
 
             <!-- Redes sociales al final del menú -->
             <div class="menu-social">
-                <a href="https://wa.me/5491127390503" target="_blank">
-                    <img src="../Media/whatsapp.svg" alt="WhatsApp" class="social-icon">
-                </a>
                 <a href="https://instagram.com/maggnostore" target="_blank">
                     <img src="../Media/instagram-line.svg" alt="Instagram" class="social-icon">
                 </a>
@@ -76,14 +70,14 @@
                 </div>
             </div>
 
-            <a id="whatsapp-link" href="#" target="_blank" class="btn-whatsapp">
-                Comprar vía WhatsApp
+            <a id="whatsapp-link" href="https://www.instagram.com/direct/t/17842751367428299/" target="_blank" class="btn-whatsapp">
+                Comprar vía Instagram
             </a>
             <!-- <a id="no-stock" href="#" target="_blank" class="btn-whatsapp-gris">
                 Comprar vía WhatsApp
             </a> -->
         </div>
-        
+    
         <script>
             // Detectar si es móvil o desktop
             function isMobileDevice() {
@@ -94,15 +88,10 @@
             var whatsappLink = document.getElementById('whatsapp-link');
         
             // Definir los enlaces para móvil y desktop
-            var mobileLink = "https://wa.me/5491127390503?text=Holaa,%20Estaba%20buscando%20comprar%20el%20Remeron%20League.%20Precio:%20$20.000";
-            var desktopLink = "https://web.whatsapp.com/send?phone=5491127390503&text=Holaa,%20Estaba%20buscando%20comprar%20el%20Remeron%20League.%20Precio:%20$20.000";
+            var instagramLink = "https://www.instagram.com/direct/t/17842751367428299/";
         
-            // Asignar el enlace correspondiente según el dispositivo
-            if (isMobileDevice()) {
-                whatsappLink.href = mobileLink;
-            } else {
-                whatsappLink.href = desktopLink;
-            }
+            // Asignar el enlace correspondiente (ya no necesitamos diferenciar entre móvil o desktop)
+            whatsappLink.href = instagramLink;
         </script>
     </div>
 
