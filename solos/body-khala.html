@@ -58,7 +58,7 @@
         <!-- Descripción del producto -->
         <div class="product-details">
             <h2>Body Khala</h2>
-            <p>Body (disponibles con escote redondo o cuadrado)</p>
+            <p>Body (disponible con escote redondo)</p>
             <h3 class="price">$9.000</h3>
             <!-- <h3 class="price">Sin stock!!</h3> -->
 
@@ -72,14 +72,14 @@
                 </div>
             </div>
 
-            <a id="whatsapp-link" href="https://www.instagram.com/direct/t/17842751367428299/" target="_blank" class="btn-whatsapp">
-                Comprar vía Instagram
+            <a id="whatsapp-link" href="#" target="_blank" class="btn-whatsapp">
+                Comprar vía WhatsApp
             </a>
             <!-- <a id="no-stock" href="#" target="_blank" class="btn-whatsapp-gris">
                 Comprar vía WhatsApp
             </a> -->
         </div>
-    
+        
         <script>
             // Detectar si es móvil o desktop
             function isMobileDevice() {
@@ -90,10 +90,15 @@
             var whatsappLink = document.getElementById('whatsapp-link');
         
             // Definir los enlaces para móvil y desktop
-            var instagramLink = "https://www.instagram.com/direct/t/17842751367428299/";
+            var mobileLink = "https://wa.me/5491127390503?text=Holaa,%20Estaba%20buscando%20comprar%20el%20Body%20Khala.%20Precio:%20$9.000";
+            var desktopLink = "https://web.whatsapp.com/send?phone=5491127390503&text=Holaa,%20Estaba%20buscando%20comprar%20el%20Body%20Khala.%20Precio:%20$9.000";
         
-            // Asignar el enlace correspondiente (ya no necesitamos diferenciar entre móvil o desktop)
-            whatsappLink.href = instagramLink;
+            // Asignar el enlace correspondiente según el dispositivo
+            if (isMobileDevice()) {
+                whatsappLink.href = mobileLink;
+            } else {
+                whatsappLink.href = desktopLink;
+            }
         </script>
     </div>
 
